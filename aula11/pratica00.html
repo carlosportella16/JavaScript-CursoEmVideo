@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Imigração</title>
+    <style>
+        body {
+            background: rgb(18, 18, 92);
+            color: white;
+            font: normal 18pt Arial;
+        }
+    
+    </style>
+</head>
+<body>
+    <h1>Sistema de Imigração</h1>
+    Digite o seu país: <input type="text" name="pais" id="pais">
+    <input type="button" value="Verificar" onclick="clicar()">
+    <div id="res">
+
+    </div>
+    <script>
+        function clicar() {
+            var txtN = window.document.getElementById('pais')
+            var res = window.document.getElementById('res')
+            var nacio = String(txtN.value).toUpperCase()
+            res.innerHTML = `<p>Você é do <strong>${nacio}</strong>.</p>`
+            if (nacio == 'BRASIL') {
+                res.innerHTML += '<p>Você é Brasileiro!</p>'
+            } else {
+                res.innerHTML += '<p>Você é Estrangeiro!</p>'
+            }
+           
+        }
+    </script>
+    
+</body>
+</html>
