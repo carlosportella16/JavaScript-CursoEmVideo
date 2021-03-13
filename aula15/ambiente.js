@@ -8,3 +8,4 @@ let pos = num.indexOf(8) // Posição onde está localizado valor 8
 console.log(`O valor 8 está na posição ${pos}.`)
 pos = num.indexOf(4)
 console.log(`O valor 4 está na posição ${pos}`) // posição = -1, pois não existe o valor 4 no vetor
+console.log('teste')
